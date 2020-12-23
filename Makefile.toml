@@ -6,3 +6,13 @@ args = ["s3", "cp", "./install.sh", "s3://hacoenv.ymgyt.io/install.sh"]
 command = "aws"
 # TODO use release build
 args = ["s3", "cp", "./target/debug/hacoenv", "s3://hacoenv.ymgyt.io/dist/x86_64-apple-darwin/hacoenv"]
+
+[tasks.build]
+command = "cargo"
+args = ["build"]
+
+[tasks.deploy]
+dependencies = [
+   "build",
+   "put_binary"
+]

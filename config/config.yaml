@@ -1,0 +1,16 @@
+hacoenv: v1
+
+# common config.
+common:
+  dependencies:
+    - git:
+        builtin: true
+
+    - docker:
+        installer:
+          url: https://www.docker.com/products/docker-desktop
+
+    - go-task:
+        binary_name: task
+        brew:
+          name: go-task/tap/go-task
