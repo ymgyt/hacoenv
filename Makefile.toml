@@ -1,0 +1,3 @@
+[tasks.put_install_script]
+command = "aws"
+args = ["s3", "cp", "./install.sh", "s3://hacoenv.ymgyt.io/install.sh"]
