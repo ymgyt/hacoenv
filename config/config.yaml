@@ -5,12 +5,15 @@ common:
   dependencies:
     - git:
         builtin: true
+        version_argument: "version"
 
     - docker:
         installer:
           url: https://www.docker.com/products/docker-desktop
+        version_argument: "--version"
 
     - go-task:
         binary_name: task
         brew:
           name: go-task/tap/go-task
+        version_argument: "--version"
