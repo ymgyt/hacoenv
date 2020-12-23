@@ -2,7 +2,6 @@ use serde::Deserialize;
 
 use crate::config::dependency::Dependency;
 use crate::prelude::*;
-use std::collections::HashMap;
 
 const CONFIG_YAML: &[u8] = include_bytes!("../../config/config.yaml");
 

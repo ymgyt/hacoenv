@@ -1,8 +1,6 @@
 use std::ffi::OsStr;
 use std::path::PathBuf;
 
-use tokio::process::Command;
-
 use crate::config::{Common, Dependency};
 use crate::prelude::*;
 
