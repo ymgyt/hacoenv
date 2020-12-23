@@ -29,6 +29,7 @@ pub struct Spec {
     pub builtin: Option<bool>,
     pub installer: Option<Installer>,
     pub brew: Option<Brew>,
+    pub version_argument: String,
 }
 
 #[derive(Deserialize, Debug, Clone)]
