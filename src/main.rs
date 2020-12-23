@@ -20,7 +20,7 @@ async fn run() {
 
     match app.subcommand {
         cmd::Subcommand::Inspect(opt) => {
-            cmd::inspect(opt).await;
+            cmd::run_inspect(opt).await;
         }
         cmd::Subcommand::Fleet(fleet) => match fleet.subcommand {
             cmd::fleet::Subcommand::Init(opt) => {

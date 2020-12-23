@@ -9,7 +9,7 @@ use crate::prelude::*;
 pub struct Inspect {}
 
 /// start inspect command.
-pub async fn run(opt: Inspect) {
+pub async fn run_inspect(opt: Inspect) {
     debug!("Start inspect {:?}", opt);
 
     print_logo();
