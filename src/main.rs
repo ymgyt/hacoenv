@@ -58,7 +58,7 @@ fn init_logger(verbose: u8) {
         }
     }
 
-    // if use explicitly specify log directive, respect it.
+    // if user explicitly specify log directive, respect it.
     if let Some(directive) = std::env::var("HACOENV_LOG").ok() {
         env_filter = Cow::Owned(directive);
     }
