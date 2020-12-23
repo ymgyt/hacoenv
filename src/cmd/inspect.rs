@@ -4,6 +4,7 @@ use crate::cmd::root::print_logo;
 use crate::prelude::*;
 
 #[derive(StructOpt, Debug)]
+#[structopt(about = "inspect system environment")]
 /// inspect command options.
 pub struct Inspect {}
 
