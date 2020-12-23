@@ -1,3 +1,8 @@
 [tasks.put_install_script]
 command = "aws"
 args = ["s3", "cp", "./install.sh", "s3://hacoenv.ymgyt.io/install.sh"]
+
+[tasks.put_binary]
+command = "aws"
+# TODO use release build
+args = ["s3", "cp", "./target/debug/hacoenv", "s3://hacoenv.ymgyt.io/dist/x86_64-apple-darwin/hacoenv"]
